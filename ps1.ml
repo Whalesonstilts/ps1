@@ -29,8 +29,8 @@ headaches. Unit tests should be your first activity, not an
 afterthought.
 
 As an example, we've already provided some unit tests in
-pset1_tests.ml for the `merge` function. (Of course, you should feel
-free to add more.)
+pset1_tests.ml for the `nonincreasing` function. (Of course, you should
+feel free to add more.)
 
 IMPORTANT NOTE: In these problem sets and in the labs as well, we'll
 often supply some skeleton code that looks like this:

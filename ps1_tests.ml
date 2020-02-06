@@ -1,7 +1,7 @@
 (*
-			 CS 51 Problem Set 1
-		Core Functional Programming -- Testing
-*)			     
+                         CS 51 Problem Set 1
+                Core Functional Programming -- Testing
+*)                           
 
 open Ps1 ;;
 
@@ -24,14 +24,21 @@ let unit_test_within (tolerance : float)
   unit_test (abs_float (value1 -. value2) < tolerance) msg ;;
   
 let nonincreasing_test () =
-  unit_test (nonincreasing []) "rev empty";
-  unit_test (nonincreasing [7]) "rev single";
-  unit_test (nonincreasing [4;4;4]) "rev repeat";
-  unit_test (not (nonincreasing [2;1;2])) "rev inc at start";
-  unit_test (nonincreasing [2;2;1]) "rev dups";
-  unit_test (nonincreasing [9;8;7;6;5;5;5;4;4;-2]) "rev long with neg";
-  unit_test (not (nonincreasing [9;8;7;6;7;5;5;5;5;4;3])) "rev long inc at mid" ;;
-
+  unit_test (nonincreasing [])
+            "rev empty";
+  unit_test (nonincreasing [7])
+            "rev single";
+  unit_test (nonincreasing [4;4;4])
+            "rev repeat";
+  unit_test (not (nonincreasing [2;1;2]))
+            "rev inc at start";
+  unit_test (nonincreasing [2;2;1])
+            "rev dups";
+  unit_test (nonincreasing [9;8;7;6;5;5;5;4;4;-2])
+            "rev long with neg";
+  unit_test (not (nonincreasing [9;8;7;6;7;5;5;5;5;4;3]))
+            "rev long inc at mid" ;;
+  
 let test_all () =
   nonincreasing_test () ;;
 
